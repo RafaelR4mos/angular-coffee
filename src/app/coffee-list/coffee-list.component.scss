@@ -42,5 +42,14 @@ h2 {
 
   button {
     margin-top: auto;
+    background-color: #674d3f;
+
+    span {
+      color: $dark-brown;
+    }
+  }
+
+  p {
+    color: $dark-brown;
   }
 }

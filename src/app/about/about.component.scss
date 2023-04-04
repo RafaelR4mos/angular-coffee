@@ -1,0 +1,23 @@
+$brown: #674d3f;
+$dark-brown: #674d3f;
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 55vw;
+  padding: 2rem 0 1rem;
+
+  .link-btn {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  p {
+    color: $dark-brown;
+  }
+
+  a {
+    background-color: $dark-brown;
+  }
+}

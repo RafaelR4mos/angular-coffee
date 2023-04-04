@@ -1,0 +1,30 @@
+$brown: #674d3f;
+$dark-brown: #674d3f;
+$beige: #ece1cf;
+$background: #fff9f2;
+$white: #fcfcfc;
+
+.page-container {
+  ul {
+    margin-top: 1rem;
+    li {
+      color: $dark-brown;
+      list-style: none;
+    }
+  }
+
+  p,
+  span {
+    font-size: 14px;
+    color: $brown;
+  }
+
+  .map-container {
+    margin-top: 3rem;
+
+    iframe {
+      margin-top: 1rem;
+      border-radius: 4px;
+    }
+  }
+}
