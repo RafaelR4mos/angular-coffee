@@ -1,0 +1,18 @@
+<div class="page-container">
+  <h2>Cafés</h2>
+
+  <div class="coffee-container">
+    <div *ngFor="let coffee of coffees" class="coffee-card">
+      <h3 [title]="coffee.name">
+        {{ coffee.name }}
+      </h3>
+      <div>
+        <p *ngIf="coffee.description">{{ coffee.description }}</p>
+        <img [src]="coffee.img" [alt]="coffee.description" />
+      </div>
+
+      <button type="button" (click)="share()">Adquirir</button>
+    </div>
+  </div>
+  <app-coffee-form></app-coffee-form>
+</div>

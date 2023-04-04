@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+$brown: #674d3f;
+$dark-brown: #674d3f;
+$beige: #ece1cf;
+$background: #fff9f2;
+$white: #fcfcfc;
+
+* {
+  font-family: "Roboto", Arial, sans-serif;
+  color: $white;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: $background;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+router-outlet + * {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3,
+h2,
+label {
+  color: $dark-brown;
+  font-weight: 700;
+  display: block;
+}
+
+p,
+span {
+  font-size: 14px;
+  color: $brown;
+}
+
+/* Button */
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: $dark-brown;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+.button:hover,
+button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Top Bar */
+
+app-top-bar {
+  width: 100%;
+  height: 68px;
+  background-color: $brown;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+app-top-bar h1 {
+  color: $white;
+  margin: 0;
+}

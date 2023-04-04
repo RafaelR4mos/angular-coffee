@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { CoffeeListComponent } from './coffee-list/coffee-list.component';
+import { CoffeeFormComponent } from './coffee-form/coffee-form.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    RouterModule.forRoot([{ path: '', component: CoffeeListComponent }]),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent, TopBarComponent, CoffeeListComponent, CoffeeFormComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
